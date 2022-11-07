@@ -1,0 +1,37 @@
+body {
+  font-family: "Titillium web";
+  margin: 0;
+  overflow: hidden;
+}
+
+.triggers {
+  bottom: 20px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: rgba(179, 28, 28, 0.753);
+}
+
+span {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 20px;
+  padding: 2px 4px;
+  transition: all 0.5s;
+}
+
+span[data-disabled="true"] {
+  opacity: 0.3;
+  pointer-events: none;
+  background-color: white;
+  transition: 0.3s;
+  color: red;
+  border-radius: 10%;
+}
+span:hover {
+  color: red;
+}
